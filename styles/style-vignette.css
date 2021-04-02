@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+.accommodation
+{
+    /*width: 880px;*/
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width:65%;
+    background-color: #f2f2f2;
+    border-radius: 2rem;
+    padding: 2em 2em 0 2em;
+}
+.accommodation-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.vignette-acc
+{
+    display: flex;
+    max-width: 15em;
+    min-width: 13em;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 16px #dedede;
+    max-height: 14em;
+    margin-top: 35px;
+    margin-bottom: 0.3rem;
+    padding:0.4rem;
+
+}
+.vignette-acc a
+{
+    display: flex;
+    flex-direction: column;
+}
+.vignette-acc a img
+{
+    max-height: 58%;
+    width: 100%;
+    object-fit:cover;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+.vignette-acc .vignette-texte
+{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    color: black;
+
+}
+.vignette-texte p
+{
+    margin: 2%;
+}
+.vignette-title
+{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.vignette-price
+{
+    font-size: 0.8rem;
+}
+.price-bold
+{
+    font-weight: bold;
+}
+.star-icon i.fa
+{
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    color:#0065FC;
+}
+.vignette-more h2
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.vignette-acc:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 2rem #0065FC;
+}
+.vignette-acc:active
+{
+    transform: scale(1);
+}
+
+
+/* POPULAR SECTION */
+.popular-vignette-container
+{
+    display: flex;
+    flex-direction:column;
+    max-width: 30%;
+    background-color: #f2f2f2;
+    border-radius: 2rem;
+    padding: 2em 2em 0 2em;
+
+}
+.popular-vignette-container h1
+{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.popular-vignette-container h1 i.fa
+{
+    
+    color: black;
+}
+.vignette-popular
+{
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 16p #dedede;
+    max-height: 145px;
+    /*max-width: 345px;*/
+    width: 100%;
+    margin-top: 2.2rem;
+    padding: 0.4rem;
+
+}
+.vignette-popular a
+{
+    display: flex;
+    text-decoration: none;
+}
+.vignette-popular a img
+{
+    display: flex;
+    max-width: 40%;
+    max-height: 134px;
+    object-fit:cover;
+    border-top-left-radius: 1.3rem;
+    border-bottom-left-radius: 1.3rem;
+}
+
+.vignette-popular .vignette-texte
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+    margin-left: 1rem;
+}
+.vignette-popular .star-icon i.fa
+{
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    color:#0065FC;
+}
+i.fa.not-activated
+{
+    color:#f2f2f2;
+}
+
+/*  ACTIVITIES SECTIONS */
+
+.activities-section
+{
+    display: flex;
+    flex-direction: column;
+    margin : 1rem;
+}
+.activities-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.activities.single
+{
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 16px #dedede;
+    max-width:20%;
+    min-width: 280px;
+    max-height: 30em;
+}
+.activities.double
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2rem;
+    max-width:20%;
+    min-width: 280px;
+    max-height: 30em;
+}
+.activities.pomegue, .activities.frioul, .activities.garde, .activities.longchamp
+{
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0 0 16px #dedede;
+    max-width:20%;
+    min-width: 280px;
+    max-height: 57%;
+
+}
+.activities.frioul
+{
+    max-height: 37%;
+}
+.activities.garde
+{
+    max-height: 43%;
+}
+.activities.longchamp
+{
+    max-height: 47%;
+}
+
+.activities a
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.activities.frioul a img, .activities.pomegue a img,
+.activities.garde a img, .activities.longchamp a img,
+.activities.single a img
+{
+    display: flex;
+    width: 100%;
+    border-radius: 1.8rem 1.8rem 0 0;
+    object-fit: cover;
+}
+.activities.frioul a img
+{
+    height: 66%;
+}
+.activities.pomegue a img
+{
+    height: 80%;
+}
+.activities.garde a img
+{
+    height: 75%;
+}
+.activities.longchamp a img
+{
+    height: 72%;
+}
+.activities.single a img
+{
+    height: 87%;
+}
+.activities-texte .activities-title
+{
+    margin-left: 1rem;
+    color: black;
+    font-weight: bold;
+}
+.activities.single:hover, .activities.pomegue:hover, .activities.frioul:hover, .activities.garde:hover, .activities.longchamp:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 2rem #0065FC;
+
+}
+/*RESPONSIVE - tablette */
+@media screen and (max-width: 1200px )
+{
+    .popular-vignette-container
+    {
+        order:1;
+        max-width: 100%;
+        width:100%;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 0;
+        padding: 2em;
+        margin-bottom: 2em;
+    }
+    .popular-vignette-container h1 a
+    {
+    padding: 0 0 0 2em;
+    }
+    .vignette-popular
+    {
+        max-width: 15em;
+    }
+    .popular-tittle
+    {
+        display: flex;
+    }
+    .accommodation
+    {
+        order:2;
+        width: 100%;
+        max-width: 100%;
+
+    }
+}
+
+/*RESPONSIVE - SMARTPHONE */
+@media screen and (max-width: 450px )
+{
+    #page
+    {
+        padding: 63px 0 0 0;
+    }
+    .search, .filter, .filter-info
+    {
+        margin: 0 1em;
+    }
+    
+    .popular-vignette-container
+    {
+        order:1;
+        max-width: 100%;
+        border-radius: 0;
+        padding: 1em 1em 2em;
+        margin-bottom: 3em;
+        margin-bottom: 1em;
+    }
+    .vignette-popular
+    {
+        margin-top: .5em;
+        width: 100%;
+        max-width: 100%;
+    }
+    .accommodation
+    {
+        order: 2;
+        max-width: 100%;
+        width:100%;
+        background-color: unset;
+        padding: 1em;
+
+    }
+    
+    .vignette-acc
+    {
+        width: 100%;
+        max-width: 100%;
+        height:13em;
+        margin-top: 1em;
+    }
+    .activities-container
+    {
+        /*flex-direction: column;
+        justify-content: space-between;
+        align-items: center;*/
+        width: 100%;
+        max-width: 100%;
+    }
+    .activities a img
+    {
+        max-height: 66%;
+    } 
+    .activities.single
+    {
+        height: 11em;
+        max-width: 100%;
+        margin-top: 2em;
+    }
+    .activities.double
+    {
+        height: 22em;
+        max-width: 100%;
+    }
+    .activities.pomegue, .activities.frioul, .activities.garde, .activities.longchamp
+    {
+        max-height: 50%;
+        max-width: 100%;
+        
+    }
+    footer
+    {
+        padding:2em;
+    }
+}
