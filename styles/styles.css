@@ -3,8 +3,6 @@
 *
 {
     font-family: 'Raleway', sans-serif;
-    /*padding: 0;*/
-    /*margin: 0;*/
     box-sizing: border-box;
 }
 #page
@@ -151,6 +149,7 @@ nav a:hover
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 2em;
 
 }
 #filter-zone-title
@@ -245,15 +244,27 @@ footer
     flex-wrap: wrap;
     justify-content: space-around;
     background-color:#f2f2f2;
-    margin-top: 2rem;
+    margin: 2rem auto;
 }
-
+.more-info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.more-info a:hover
+{
+    font-weight: bold;
+}
 /*RESPONSIVE - SMARTPHONE*/
 @media screen and (max-width: 450px )
 {
+    #page
+    {
+        padding: 63px 0 0 0;
+    }
     header
     {
-        position: fixed;
         align-items: center;
         /*margin-top: 20px;*/
         background-color: white;
@@ -276,10 +287,13 @@ footer
         border-bottom:2px solid #f2f2f2 ;
         padding: 23px 0 19px;
     }
-    /*not finished yet*/
     nav ul li a:active
     {
         border-bottom:2px solid #0065FC;
+    }
+    .search
+    {
+        max-width: 100%;
     }
     .search-icon
     {

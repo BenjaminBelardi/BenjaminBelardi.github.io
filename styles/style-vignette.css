@@ -30,7 +30,7 @@
     max-height: 14em;
     margin-top: 35px;
     margin-bottom: 0.3rem;
-    padding:0.4rem;
+    padding:0.2rem;
 
 }
 .vignette-acc a
@@ -77,7 +77,7 @@
     font-size: 1rem;
     color:#0065FC;
 }
-.vignette-more h2
+.vignette-more
 {
     font-size: 1.2rem;
     font-weight: bold;
@@ -118,12 +118,12 @@
 {
     background-color: white;
     border-radius: 1.5rem;
-    box-shadow: 0 0 16p #dedede;
+    box-shadow: 0 0 16px #dedede;
     max-height: 145px;
     /*max-width: 345px;*/
     width: 100%;
     margin-top: 2.2rem;
-    padding: 0.4rem;
+    padding: 0.2rem;
 
 }
 .vignette-popular a
@@ -134,6 +134,7 @@
 .vignette-popular a img
 {
     display: flex;
+    width: 40%;
     max-width: 40%;
     max-height: 134px;
     object-fit:cover;
@@ -154,9 +155,8 @@
     margin-top: 2rem;
     margin-bottom: 0.8rem;
     font-size: 1rem;
-    color:#0065FC;
 }
-i.fa.not-activated
+i.fa-star.not-activated
 {
     color:#f2f2f2;
 }
@@ -305,16 +305,7 @@ i.fa.not-activated
 
 /*RESPONSIVE - SMARTPHONE */
 @media screen and (max-width: 450px )
-{
-    #page
-    {
-        padding: 63px 0 0 0;
-    }
-    .search, .filter, .filter-info
-    {
-        margin: 0 1em;
-    }
-    
+{   
     .popular-vignette-container
     {
         order:1;
@@ -362,6 +353,7 @@ i.fa.not-activated
     .activities.single
     {
         height: 11em;
+        width: 100%;
         max-width: 100%;
         margin-top: 2em;
     }
