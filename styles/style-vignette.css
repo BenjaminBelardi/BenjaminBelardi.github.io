@@ -303,6 +303,9 @@ i.fa-star.not-activated
 }
 .activities-texte .activities-title
 {
+    display: flex;
+    height: 100%;
+    align-items: center;
     margin-left: 1rem;
     color: black;
     font-weight: bold;
@@ -327,8 +330,14 @@ i.fa-star.not-activated
     .activities.longchamp, .activities.frioul, .activities.garde
     {
         height: 250px;
+        flex-basis: 47%;
     }
-}
+    .activities.frioul a img, .activities.pomegue a img,
+    .activities.garde a img, .activities.longchamp a img,
+    .activities.port a img, .activities.calanque a img
+    {
+        height: 70%;
+    }
 @media screen and (max-width: 1200px )
 {
     .accommodation
@@ -368,7 +377,7 @@ i.fa-star.not-activated
     }
 }
 /*RESPONSIVE - SMARTPHONE */
-@media screen and (max-width: 600px )
+@media screen and  (max-width: 660px )
 {   
     .popular-vignette-container
     {
@@ -421,9 +430,10 @@ i.fa-star.not-activated
         max-height: 70%;
     }
 
-    .activities
+    .activities.activities.port , .activities.calanque, .activities.frioul, .activities.garde, .activities.longchamp, .activities.pomegue
     {
         height: 12rem;
+        flex-basis: 100%;
         width: 100%;
         max-width: 100%;
         margin-top: 1rem;
