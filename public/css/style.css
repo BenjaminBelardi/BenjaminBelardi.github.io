@@ -203,7 +203,7 @@ a {
 .btn__like--menu-layout {
   position: absolute;
   top: 2rem;
-  left: 20rem;
+  left: 19.5rem;
 }
 .btn__like:hover {
   transition: opacity 0.5s;
@@ -473,10 +473,12 @@ a {
   border-radius: 1rem;
   box-shadow: 0 0 16px #dedede;
   margin-top: 1rem;
+  width: 100%;
 }
 @media (min-width: 700px) {
   .restaurant__card {
     max-width: 49%;
+    width: 49%;
   }
 }
 .restaurant__card__txt {
